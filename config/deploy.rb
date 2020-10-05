@@ -10,7 +10,6 @@ set :repo_url, "https://github.com/evilbunnyrabbits/table_host_backend.git"
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, "/home/deploy/table_host/"
 
-
 # Default value for :format is :airbrussh.
 # set :format, :airbrussh
 
