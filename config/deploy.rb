@@ -2,13 +2,13 @@
 lock "~> 3.14.1"
 
 set :application, "table_host"
-set :repo_url, "https://github.com/bengarlock/table_host.git"
+set :repo_url, "https://github.com/evilbunnyrabbits/table_host_backend.git"
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, "/home/deploy/#{fetch :application}"
+set :deploy_to, "/home/deploy/table_host/"
 
 
 # Default value for :format is :airbrussh.
