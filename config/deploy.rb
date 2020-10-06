@@ -13,8 +13,6 @@ set :deploy_to, "/home/deploy/#{fetch :application}"
 
 set :linked_dirs, %w(my_shared_directory)
 
-append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
-
 set :keep_releases, 5
 
 namespace :deploy do
