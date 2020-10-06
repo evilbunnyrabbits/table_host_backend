@@ -1,5 +1,7 @@
 # Load DSL and Setup Up Stages
+=begin
 require 'capistrano/setup'
+=end
 
 # Includes default deployment tasks
 require 'capistrano/deploy'
