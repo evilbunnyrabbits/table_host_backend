@@ -5,7 +5,7 @@ set :stages, ["production"]
 set :default_stage, "production"
 set :ssh_options, {:forward_agent => true}
 
-set :application, 'table_host'
+set :application, 'table_host_backend'
 set :repo_url, 'https://github.com/evilbunnyrabbits/table_host_backend.git'
 set :user, "deploy"
 

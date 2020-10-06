@@ -1,0 +1,2 @@
+DATABASE_URL=postgresql://deploy:chocolate100X@127.0.0.1/table_host_backend
+
