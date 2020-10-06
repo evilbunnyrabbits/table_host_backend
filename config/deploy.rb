@@ -2,7 +2,7 @@ server '127.0.0.1', port: 22, roles: [:web, :app, :db], primary: true
 
 set :repo_url,        'https://github.com/evilbunnyrabbits/table_host_backend.git'
 set :application,     'table_host_backend'
-set :user,            'deploy'
+set :user, 'deploy'
 set :puma_threads,    [4, 16]
 set :puma_workers,    0
 
