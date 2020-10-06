@@ -7,8 +7,7 @@ ruby '2.6.1'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
-# Use Puma as the app server
-gem 'puma', '~> 4.1'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
@@ -50,7 +49,12 @@ gem 'pg_search'
 gem 'gmail'
 
 
-gem 'capistrano', '~> 3.11'
-gem 'capistrano-rails', '~> 1.4'
-gem 'capistrano-passenger', '~> 0.2.0'
-gem 'capistrano-rbenv', '~> 2.1', '>= 2.1.4'
+group :development do
+  gem 'capistrano',         require: false
+  gem 'capistrano-rvm',     require: false
+  gem 'capistrano-rails',   require: false
+  gem 'capistrano-bundler', require: false
+  gem 'capistrano3-puma',   require: false
+end
+
+gem 'puma'
