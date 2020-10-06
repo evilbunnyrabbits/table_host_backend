@@ -3,8 +3,10 @@ require 'capistrano/setup'
 
 # Includes default deployment tasks
 require 'capistrano/deploy'
+=begin
 require 'capistrano/scm/git'
 install_plugin Capistrano::SCM::Git
+=end
 
 # Includes tasks from other gems included in your Gemfile
 #
