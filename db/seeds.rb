@@ -27,7 +27,7 @@ guest_notes = [
     "Likes dirty martini with olive"
 ]
 
-100000.times do
+1000.times do
   Guest.create(first_name: Faker::Name.first_name, last_name: Faker::Name.last_name, phone_number: Faker::PhoneNumber.cell_phone, guest_notes: guest_notes[rand(0...guest_notes.length)])
 end
 
@@ -137,7 +137,7 @@ reservation_notes = [
     "Requested booth",
 ]
 
-8000.times do
+100.times do
   slot = Slot.all.sample
   guest = Guest.all.sample
 
