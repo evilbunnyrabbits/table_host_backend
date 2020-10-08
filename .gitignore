@@ -31,3 +31,5 @@
 
 api.openweathermap.org/data/2.5/weather?zip=07071,us
 
+.env
+.env
